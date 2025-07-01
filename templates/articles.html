@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Articole</h2>
+<a href="/articles/new">Adaugă articol</a>
+<ul>
+    {% for article in articles %}
+    <li><strong>{{ article['title'] }}</strong>: {{ article['content'] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

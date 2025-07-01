@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Vladu Marius</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #34495e;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 18px 30px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgb(44 62 80 / 0.5);
+        }
+
+        header a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 600;
+            background-color: #34495e;
+            padding: 12px 28px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            font-size: 1rem;
+            box-shadow: 0 3px 8px rgb(52 73 94 / 0.3);
+        }
+
+        header a:hover {
+            background-color: #1b2738;
+            transform: scale(1.05);
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 12px 24px rgb(44 62 80 / 0.1);
+            border-radius: 12px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left-column {
+            width: 30%;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-column img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            border: 3px solid #ecf0f1;
+            box-shadow: 0 4px 10px rgb(236 240 241 / 0.4);
+        }
+
+        .left-column h2 {
+            font-weight: 700;
+            font-size: 1.7rem;
+            margin-bottom: 8px;
+        }
+
+        .left-column p {
+            font-size: 1rem;
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+
+        .right-column {
+            width: 70%;
+            padding: 40px 35px;
+            color: #2c3e50;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 8px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 6px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            line-height: 1.5;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        p strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+
+            .left-column {
+                padding: 30px 20px;
+            }
+
+            .right-column {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="{{ url_for('index') }}">&larr; Înapoi la pagina principală</a>
+</header>
+
+<div class="cv-container">
+    <div class="left-column">
+        <img src="{{ url_for('static', filename='img/profil1.jpeg') }}" alt="Profil" />
+        <h2>Vladu Marius</h2>
+        <p><strong>Rol:</strong> Elev It Factory</p>
+        <p><strong>Email:</strong> vladumarius136@gmail.com</p>
+        <p><strong>Telefon:</strong> 0764 515 536</p>
+        <p><strong>Adresa:</strong> Rosiori de Vede, Teleorman, România</p>
+    </div>
+
+    <div class="right-column">
+        <div class="section">
+            <h1>Profil</h1>
+            <p>Bună ziua! Mă numesc Vladu Marius, sunt o persoană pasionată de tehnologie, iar acesta este portofoliul meu online.</p>
+        </div>
+
+        <div class="section">
+            <h3>Experiență profesională</h3>
+            <p><strong>Lucrator Comercial </strong> – SC Cardinal COM SRL<br />21.09.2022 – 19.05.2023</p>
+            <ul>
+                <li>-Vanzarea produselor .</li>
+                <li>-Inregistrarea facturilor.</li>
+            </ul>
+            <p><strong>Manipulant Marfuri</strong> - VASTA 94 COM SRL<br />22.01.2024 - 13.05.2024</p>
+            <ul>
+                <li>-Vanzarea produselor</li>
+                <li>-Gestionare marfa</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Educație</h3>
+            <p><strong>Diplomă de Bacalaureat</strong><br />Liceul Tehnologic Virgil Madgearu – 2018 – 2022</p>
+        </div>
+
+        <div class="section skills">
+            <h3>Competențe</h3>
+            <ul>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <div class="section hobby">
+            <h3>Hobby-uri si teme de interes</h3>
+            <ul>
+                <li>Pasiune pentru jocurile video, în special pentru jocuri de strategie, care dezvoltă
+                    abilități precum gândirea strategică, rezolvarea problemelor, coordonarea și luarea
+                    rapidă a deciziilor. Particip activ în comunități online și colaborez cu alți jucători
+                    pentru a atinge obiective comune, ceea ce îmi îmbunătățește abilitățile de lucru în
+                    echipă și comunicare.</li>
+                <li>Practic sport regulat, în special alergare, ceea ce îmi dezvoltă disciplina, abilitățile de
+                    lucru în echipă și rezistența fizică. Sunt dedicat să îmi îmbunătățesc performanțele și
+                    consider că sportul este o modalitate excelentă de a învăța despre perseverență, concentrare și gestionarea timpului.</li>
+            </ul>
+        </div>
+
+        <div class="section references">
+            <h3>Referințe</h3>
+            <ul>
+                <li>Prof. Dr. Ovidiu Chirita – IT Factory</li>
+                <li>Coordonator curs python </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

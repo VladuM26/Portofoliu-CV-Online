@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Adaugă articol nou</h2>
+<form method="post">
+    <label for="title">Titlu:</label><br>
+    <input type="text" name="title" id="title"><br>
+    <label for="content">Conținut:</label><br>
+    <textarea name="content" id="content"></textarea><br>
+    <input type="submit" value="Salvează">
+</form>
+{% endblock %}
