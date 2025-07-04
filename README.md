@@ -1,4 +1,5 @@
-Portofoliu Online - Python & Flask
+Portofoliu Online - Python & Flask\
+
 Acest proiect reprezintă un portofoliu online personal, dezvoltat cu ajutorul limbajului Python și framework-ului Flask, destinat prezentării experienței profesionale, proiectelor și articolelor personale, precum și pentru facilitarea contactului direct printr-un formular funcțional.
 
 Caracteristici și funcționalități
