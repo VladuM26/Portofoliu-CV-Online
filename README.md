@@ -55,19 +55,16 @@ Editează
 python app.py
 Deschide un browser și accesează adresa:
 
-cpp
-Copiază
-Editează
+
 http://127.0.0.1:5000
 Structura directorului
-bash
-Copiază
-Editează
+
 |-- app.py              # Fișierul principal care rulează aplicația Flask
 |-- database.db         # Baza de date SQLite pentru articole și mesaje
 |-- /templates          # Șabloane HTML pentru paginile aplicației
 |-- /static             # Resurse statice (CSS, imagini, JavaScript)
 |-- README.md           # Documentația proiectului
+
 Beneficii ale proiectului
 Permite o prezentare profesională și modernă a profilului personal online.
 
